@@ -1,3 +1,24 @@
+/* Zigzag line styles */
+        .zigzag {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 99%;
+            height: 99%;
+            z-index: 0; /* Behind the spinner */
+        }
+
+        .zigzag svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .zigzag-line {
+            fill: none;
+            stroke: #bbbaba; /* Dark color for minimalistic look */
+            stroke-width: 3; /* Thin line for subtlety */
+        }
+
 .load {
     height: 100vh;
     width: 100vw;
@@ -10,8 +31,8 @@
 }
 
 .spinner {
-    width: 5vw;
-    height: 6vw;
+    width: 8vw;
+    height: 9vw;
 }
 
 @keyframes spin {
