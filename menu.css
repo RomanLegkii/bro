@@ -108,7 +108,7 @@ body {
 }
 
 .navbar .menu-items {
-  padding-top: 120px;
+  padding-top: 15vh;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
   height: 100vh;
   width: 15vw;
@@ -121,11 +121,11 @@ body {
   background: #4AAABA;
 }
 
-.navbar .menu-items li {
+/* .navbar .menu-items li {
   margin-bottom: 1.2rem;
   font-size: 1.5rem;
   font-weight: 500;
-}
+} */
 
 .logo {
   position: absolute;
