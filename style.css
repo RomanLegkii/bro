@@ -1,0 +1,45 @@
+
+ @font-face {
+     font-family: 'TheCrewPro';
+     src: url('src/TheCrewPro.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ /* Псевдоэлемент для темного оверлея */
+ .main::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.6);
+     /* Полупрозрачный черный оверлей */
+     z-index: 1;
+     filter: contrast(1.2) saturate(0.8);
+     /* Усиливаем контраст и слегка снижаем насыщенность */
+ }
+
+ .header-title {
+     font-family: 'TheCrewPro', sans-serif;
+     font-size: 5vw;
+     /* Размер можно настроить под ваш макет */
+     color: #ffd700;
+     /* Ярко-желтый, как на изображении */
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     /* Добавляет граффити-эффект */
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+         /* Тень для глубины */
+         -1px -1px 2px rgba(255, 215, 0, 0.5);
+     /* Легкий ореол */
+     /* Обводка для контраста (опционально) */
+     position: absolute;
+     top: 20%;
+     /* Центрируем относительно .main */
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 3;
+     text-align: center;
+ }

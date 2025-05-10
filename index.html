@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        * {
+            border-color: #ff0000;
+            /* outline: 3px solid black; */
+        }
+
+        .main {
+            background-color: rgb(122, 83, 5);
+            height: 100vh;
+            display: none;
+            grid-template-rows: 20% 20% 20% 20% 20%;
+            background: url(src/band.jpg) no-repeat center center;
+            position: relative;
+            overflow: hidden;
+            filter: brightness(0.7) grayscale(0.3);
+            background-size: cover;
+            /* background-position-y: -10vh; */
+            /* Затемнение и гранжевый эффект для фона */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;
+            /* Темно-серый фон для всего сайта */
+            color: #e0e0e0;
+            /* Светло-серый для текста */
+            font-family: 'Arial Black', sans-serif;
+            /* Грубый шрифт для панк-стиля */
+        }
+
+        .copyright {
+            grid-row: 5/6;
+            display: grid;
+            place-items: center;
+            margin-top: 5vh;
+            width: 100%;
+            height: 20%;
+            font-size: 1vw;
+            z-index: 2;
+        }
+    </style>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="spinner.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="load">
+        <img src="src/logo.svg" alt="Spinning Logo" class="spinner">
+    </div>
+    <div class="main">
+        <audio src="src/sound.mp3" type="audio/mpeg" id="sound"></audio>
+        <nav>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <!-- <div class="logo">
+                        <h1>Navbar</h1>
+                    </div> -->
+                    <div class="menu-items">
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Merch</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1 class="header-title">THE SUNDAY </br> ALL STARS PROJECT</h1>
+        <div class="copyright">© 2025 All rights reserved<div class="social"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
