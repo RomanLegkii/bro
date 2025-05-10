@@ -1,23 +1,26 @@
 /* Zigzag line styles */
-        .zigzag {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 99%;
-            height: 99%;
-            z-index: 0; /* Behind the spinner */
-        }
+.zigzag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    z-index: 0;
+    /* Behind the spinner */
+}
 
-        .zigzag svg {
-            width: 100%;
-            height: 100%;
-        }
+.zigzag svg {
+    width: 100%;
+    height: 100%;
+}
 
-        .zigzag-line {
-            fill: none;
-            stroke: #bbbaba; /* Dark color for minimalistic look */
-            stroke-width: 3; /* Thin line for subtlety */
-        }
+.zigzag-line {
+    fill: none;
+    stroke: #bbbaba;
+    /* Dark color for minimalistic look */
+    stroke-width: 3;
+    /* Thin line for subtlety */
+}
 
 .load {
     height: 100vh;
@@ -25,37 +28,48 @@
     display: grid;
     place-items: center;
 }
+
 .main {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
 .spinner {
-    width: 8vw;
-    height: 9vw;
+    width: 14vh;
+    height: 16.5vh;
 }
 
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
+
     /* 50%{
         transform: rotate(1440deg); 
     } */
     100% {
-        transform: rotate(1440deg); 
+        transform: rotate(1440deg);
     }
 }
 
 /* Анимация подпрыгивания влево-вправо */
 @keyframes bounce {
-    0%, 30%, 60%, 80%, 100% {
+
+    0%,
+    30%,
+    60%,
+    80%,
+    100% {
         transform: translateY(0) translateX(0);
     }
+
     10% {
-        transform: translateY(-30px) translateX(-10px); /* Вверх и влево */
+        transform: translateY(-30px) translateX(-10px);
+        /* Вверх и влево */
     }
+
     40% {
-        transform: translateY(-30px) translateX(10px); /* Вверх и вправо */
+        transform: translateY(-30px) translateX(10px);
+        /* Вверх и вправо */
     }
 }
